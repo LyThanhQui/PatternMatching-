@@ -72,7 +72,8 @@ namespace PatternMatching
                 throw new ArgumentException(message: "Invalid Shape", paramName: nameof(shape));
             }
         }*/
-        public static void DisplayArea(Shape shape)
+        //in C# 7
+        /*public static void DisplayArea(Shape shape)
         {
             if (shape is Circle c)
             {
@@ -90,8 +91,30 @@ namespace PatternMatching
             {
                 throw new ArgumentException(message: "Invalid Shape", paramName: nameof(shape));
             }
+        }*/
+        //Pattern Matching using the “switch” statement in C#:
+        public static void DisplayArea(Shape shape)
+        {
+            switch (shape)
+            {
+                case Circle c:
+                    Console.WriteLine("Area of Circle is : " + c.Radius * c.Radius * Shape.PI);
+                    break;
+                case Rectangle r:
+                    Console.WriteLine("Area of Rectangle is : " + r.Length * r.Height);
+                    break;
+             //   case Triangle t:
+             //      Console.WriteLine("Area of Triangle is : " + 0.5 * t.Base * t.Height);
+                    break;
+                default:
+                    throw new ArgumentException(message: "Invalid Shape", paramName: nameof(shape));
+                case null:
+                    throw new ArgumentNullException(nameof(shape));
+            }
         }
     }
+
+
 
 
 }
