@@ -42,6 +42,8 @@ namespace PatternMatching
     {
         static void Main()
         {
+            Rectangle square = new Rectangle(10, 10);
+            DisplayArea(square);
             Circle circle = new Circle(10);
             DisplayArea(circle);
             Rectangle rectangle = new Rectangle(10, 5);
@@ -93,7 +95,7 @@ namespace PatternMatching
             }
         }*/
         //Pattern Matching using the “switch” statement in C#:
-        public static void DisplayArea(Shape shape)
+        /*public static void DisplayArea(Shape shape)
         {
             switch (shape)
             {
@@ -103,18 +105,42 @@ namespace PatternMatching
                 case Rectangle r:
                     Console.WriteLine("Area of Rectangle is : " + r.Length * r.Height);
                     break;
-             //   case Triangle t:
-             //      Console.WriteLine("Area of Triangle is : " + 0.5 * t.Base * t.Height);
+               case Triangle t:
+                   Console.WriteLine("Area of Triangle is : " + 0.5 * t.Base * t.Height);
+                    break;
+                case null:
+                    throw new ArgumentNullException(nameof(shape));
+                    
+                default:
+                    throw new ArgumentException(message: "Invalid Shape", paramName: nameof(shape));
+            }*/
+
+        //Case Expressions using When clauses in C#:
+        public static void DisplayArea(Shape shape)
+        {
+            switch (shape)
+            {
+                case Rectangle r when r.Length == r.Height:
+                    Console.WriteLine("Area of Sqaure is : " + r.Length * r.Height);
+                    break;
+                case Rectangle r:
+                    Console.WriteLine("Area of Rectangle is : " + r.Length * r.Height);
+                    break;
+                case Circle c:
+                    Console.WriteLine("Area of Circle is : " + c.Radius * c.Radius * Shape.PI);
+                    break;
+                case Triangle t:
+                    Console.WriteLine("Area of Triangle is : " + 0.5 * t.Base * t.Height);
                     break;
                 default:
                     throw new ArgumentException(message: "Invalid Shape", paramName: nameof(shape));
-                case null:
-                    throw new ArgumentNullException(nameof(shape));
             }
         }
+
     }
-
-
-
-
 }
+
+
+
+
+
