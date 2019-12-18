@@ -50,7 +50,7 @@ namespace PatternMatching
             DisplayArea(triangle);
             Console.ReadKey();
         }
-        public static void DisplayArea(Shape shape)
+        /*public static void DisplayArea(Shape shape)
         {
             if (shape is Circle)
             {
@@ -65,6 +65,25 @@ namespace PatternMatching
             else if (shape is Triangle)
             {
                 Triangle t = (Triangle)shape;
+                Console.WriteLine("Area of Triangle is : " + 0.5 * t.Base * t.Height);
+            }
+            else
+            {
+                throw new ArgumentException(message: "Invalid Shape", paramName: nameof(shape));
+            }
+        }*/
+        public static void DisplayArea(Shape shape)
+        {
+            if (shape is Circle c)
+            {
+                Console.WriteLine("Area of Circle is : " + c.Radius * c.Radius * Shape.PI);
+            }
+            else if (shape is Rectangle r)
+            {
+                Console.WriteLine("Area of Rectangle is : " + r.Length * r.Height);
+            }
+            else if (shape is Triangle t)
+            {
                 Console.WriteLine("Area of Triangle is : " + 0.5 * t.Base * t.Height);
             }
             else
