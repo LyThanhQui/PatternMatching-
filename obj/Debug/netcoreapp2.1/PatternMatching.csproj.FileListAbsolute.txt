@@ -1,0 +1,11 @@
+H:\demo dotnettutorials\3. C# 7.X new Features\PatternMatching\PatternMatching\bin\Debug\netcoreapp2.1\PatternMatching.deps.json
+H:\demo dotnettutorials\3. C# 7.X new Features\PatternMatching\PatternMatching\bin\Debug\netcoreapp2.1\PatternMatching.runtimeconfig.json
+H:\demo dotnettutorials\3. C# 7.X new Features\PatternMatching\PatternMatching\bin\Debug\netcoreapp2.1\PatternMatching.runtimeconfig.dev.json
+H:\demo dotnettutorials\3. C# 7.X new Features\PatternMatching\PatternMatching\bin\Debug\netcoreapp2.1\PatternMatching.dll
+H:\demo dotnettutorials\3. C# 7.X new Features\PatternMatching\PatternMatching\bin\Debug\netcoreapp2.1\PatternMatching.pdb
+H:\demo dotnettutorials\3. C# 7.X new Features\PatternMatching\PatternMatching\obj\Debug\netcoreapp2.1\PatternMatching.csprojAssemblyReference.cache
+H:\demo dotnettutorials\3. C# 7.X new Features\PatternMatching\PatternMatching\obj\Debug\netcoreapp2.1\PatternMatching.csproj.CoreCompileInputs.cache
+H:\demo dotnettutorials\3. C# 7.X new Features\PatternMatching\PatternMatching\obj\Debug\netcoreapp2.1\PatternMatching.AssemblyInfoInputs.cache
+H:\demo dotnettutorials\3. C# 7.X new Features\PatternMatching\PatternMatching\obj\Debug\netcoreapp2.1\PatternMatching.AssemblyInfo.cs
+H:\demo dotnettutorials\3. C# 7.X new Features\PatternMatching\PatternMatching\obj\Debug\netcoreapp2.1\PatternMatching.dll
+H:\demo dotnettutorials\3. C# 7.X new Features\PatternMatching\PatternMatching\obj\Debug\netcoreapp2.1\PatternMatching.pdb
